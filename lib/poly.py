@@ -8,7 +8,7 @@ class poligono:
     def nompoly(self):
         match self.numlado:
             case 3:
-                return " Tu poligono es un triangulo"
+                return " Tu poligono es un triangulo "
             case 4:
                 return"Tu poligono es un cuadrado"
             case 5:
