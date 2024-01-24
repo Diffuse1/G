@@ -22,3 +22,14 @@ obj__poly__2.sizelado = 15
 obj__poly__2.apotema =10 
 print(obj__poly__2)
 print(obj__poly__2.nompoly())
+print(f"El area es : {obj__poly__2.getarea()}")
+print(f"El area es mayor a 200?: {obj__poly__2.chkarea()}")
+print(obj__poly__2.setcolor("Verde vejiga"))
+try:
+    sum = 10/0
+except ZeroDivisionError:
+    print("No puesdes dividir entre cero. . .")
+except TypeError:
+    print("No puedes dividir strings entre numeros")
+except Exception as e:
+    print(f"Error desconocido: {e}")

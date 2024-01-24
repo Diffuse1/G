@@ -39,3 +39,16 @@ class poligonoregular( poligono):
         pass
     def __str__(self):
         return f"numlado:{self.numlado},sizelado:{self.sizelado}, apotema:{self.apotema}"
+    def getarea(self):
+        area = (self.apotema * super().peripoly())/2
+        return area
+    def chkarea(self):
+        if self.getarea() >= 200:
+            return "Si"
+        else:
+            return "No"
+    def setcolor(self,color):
+        self.color=color
+        pass
+"""        return f"El color es: {self.color}"""
+        
